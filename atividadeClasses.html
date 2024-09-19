@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./atividadeClasses.css">
+    <script src="./atividadeClasses.js"></script>
+    <title>Atividade Classes</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+
+            <h2>Cadastro de Funcionários</h2>
+            <label>Nome:
+                <input required placeholder="Digite seu nome aqui" id="nome">
+            </label>
+
+            <label> Idade:
+                <input required placeholder="exemplo: 20" id="idade">
+            </label>
+
+            <label> Cargo:
+                <select required name="cargo" id="cargo">
+                    <option></option>
+                    <option>Desenvolvedor</option>
+                    <option>Gerente</option>
+                </select>
+            </label>
+
+            <label>Departamento:
+                <select id="departamento">
+                    <option></option>
+                    <option>Testes</option>
+                    <option>Desenvolvimento</option>
+                    <option>Projetos</option>
+                </select>
+            </label>
+
+            <label>Linguagem:
+                <select id="linguagem">
+                    <option></option>
+                    <option>PHP</option>
+                    <option>JavaScript</option>
+                    <option>Python</option>
+                </select>
+            </label>
+
+            <button id="btn" type="button" onclick="funcionario()">Enviar</button>
+
+        </form>
+
+        <div class="campoDiv">
+            <p id="apresentacao"></p>
+            <p id="seTrabalha"></p>
+            <p id="sePrograma"></p>
+            <p id="gerencia"></p>
+        </div>
+    </div>
+</body>
+</html>
